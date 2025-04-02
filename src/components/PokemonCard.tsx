@@ -1,6 +1,15 @@
 import React from 'react';
 
-function PokemonCard({ pokemon }) {
+interface Pokemon {
+  name: string;
+  imgSrc?: string; // optionnel
+}
+
+interface PokemonCardProps {
+  pokemon: Pokemon;
+}
+
+function PokemonCard({ pokemon }: PokemonCardProps) {
   return (
     <figure>
       {pokemon.imgSrc !== undefined ? (
