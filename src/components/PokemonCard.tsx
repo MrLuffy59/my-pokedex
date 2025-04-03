@@ -2,7 +2,7 @@ import React from 'react';
 
 interface Pokemon {
   name: string;
-  imgSrc?: string; // optionnel
+  imgSrc?: string;
 }
 
 interface PokemonCardProps {
